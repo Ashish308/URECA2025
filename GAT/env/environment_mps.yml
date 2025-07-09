@@ -1,0 +1,47 @@
+name: sc_gat_mps
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  # Core dependencies
+  - python=3.9.13
+  - pip
+  
+  # PyTorch for Apple Silicon
+  - pytorch=2.0.1
+  - torchvision=0.15.2
+  - torchaudio=2.0.2
+  
+  # System libraries
+  - libblas=*=*openblas
+  - hdf5=1.12.2
+  - h5py=3.8.0
+  - pytables=3.7.0
+  
+  # Scientific computing
+  - numpy=1.23.5
+  - scipy=1.9.3
+  - pandas=1.5.3
+  
+  # Single-cell analysis
+  - scanpy=1.9.3
+  - anndata=0.8.0
+  
+  # Machine learning
+  - scikit-learn=1.2.2
+  
+  # Visualization
+  - matplotlib=3.6.3
+  - seaborn=0.12.2
+  
+  # Utilities
+  - tqdm=4.65.0
+  - pyyaml=6.0
+  
+  # PyTorch Geometric and dependencies via pip
+  - pip:
+    - torch-scatter==2.1.1
+    - torch-sparse==0.6.17
+    - torch-cluster==1.6.1
+    - torch-spline-conv==1.2.2
+    - torch-geometric==2.3.1
