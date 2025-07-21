@@ -1,0 +1,35 @@
+main function:
+334 - 808
+
+    Embedding Intialization
+    345 - 415
+
+    Graph Intialization
+    417 - 461 
+
+    EM Loop to refine cell embedding and Graph representation
+    466-731
+
+        Train cluster specific autoencoder (if quickMode == false)
+        542 - 594
+
+
+        Improve cell embeddings and update graph using new embeddings
+        596 - 615
+
+        Save current embeddings and graph
+        633 - 668
+
+        Check if embeddings and/or graph converge
+        670 - 730
+
+    Gene Imputation
+    732 - 808
+
+args to use 
+
+--args.useBothembedding 
+
+--args.converge_type "graph"
+
+--prunetype "KNNgraphStats"
